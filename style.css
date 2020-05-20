@@ -63,6 +63,10 @@ div.relative {
     top: 1.5px;
 }
 
+div.navbar {
+    display: flex;
+}
+
 li {
     padding-right: 1em;
 }
@@ -76,6 +80,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex: 1;
 }
 
 a {
@@ -124,7 +129,6 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
-  left: 77em;
 }
 .theme-switch-wrapper em {
   margin-left: 10px;
