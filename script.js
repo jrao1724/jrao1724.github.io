@@ -15,7 +15,6 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'dark');
     }
     else {
-        toggleSwitch.checked = false;
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
     }
