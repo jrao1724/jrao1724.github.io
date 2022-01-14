@@ -71,16 +71,21 @@ li {
     padding-right: 1em;
 }
 
-li:hover, li:focus-within {
+/* li:hover, li:focus-within {
     color: #c294e3;
-}
+} */
 
-ul {
+ul.header {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex: 1;
+}
+
+ul.experience {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 a {
@@ -101,6 +106,18 @@ p> a {
   transition: background-size 80ms ease-in-out;
 }
 p> a:hover, a:focus {
+  background-size: 100% 100%;
+  transition: background-size 80ms ease-in-out;
+}
+
+li.entry> a {
+  background-image: linear-gradient(#c294e3, #c294e3);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 15%;
+  transition: background-size 80ms ease-in-out;
+}
+li.entry> a:hover, a:focus {
   background-size: 100% 100%;
   transition: background-size 80ms ease-in-out;
 }
@@ -187,6 +204,16 @@ input:checked + .slider:before {
 mark.purpleButNot {
   color: #c294e3;
   background: none;
+}
+
+li.title {
+  font-size: 1.3em;
+}
+
+div.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Hide scrollbar */
